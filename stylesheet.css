@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: context-menu;
+}
+
+body {
+    font-family: "Avenir Next";
+}
+li {
+    list-style: none;
+}
+header {  
+    position: fixed;
+    width: 100%;
+     background-color: rgba(30, 39, 40, 0.9);
+     height: 65px;
+     color: white;
+     z-index: 10;
+ }
+ .header-logo {
+     font-size: 26px;
+ }
+ .header-menu{
+     margin-right: 30px;
+ }
+ .header-menu li{
+     float: right;
+     font-size: 20px;
+     padding: 20px 25px;
+     transition: background-color 0.5s;
+     cursor: pointer;
+   
+ }
+ 
+
+ 
+ .content-one{
+     width: 100% !important;
+     height: 670px;
+    background-image: url(./images4.jpg);
+     background-size: cover;
+    color: white;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: whitesmoke;
+    
+ }
+
+ .content-one-wrapper{
+      position: absolute;
+      height: 670px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 2;
+ }
+ 
+ .content-one-lorem{
+     border-radius: 25px;
+     background-color: rgba(12, 12, 12, 0.8);
+     box-shadow: 4px 4px 4px #D7D7D7;
+     z-index: 3;
+ }
+ 
+ .content-one-lorem h1{
+     opacity: 0.7;
+     transition: opacity 0.5s ease-in-out; 
+ }
+ 
+ .content-one-lorem p{
+     opacity: 0.7;
+     transition: opacity 0.5s ease-in-out;
+     font-size: 18px;
+     justify-content: center;
+ }
+ 
+
+ 
+ .content-two{
+     background-color:white;
+    color: white;
+    text-align: center;
+ }
+
+@media screen and (min-width:1001px){
+
+     .header-logo {
+         float: left;
+         padding:16px 50px;
+     }
+
+     .content-one-lorem{
+         float: right;
+         margin: 115px 90px 0px 0px;
+  
+         height: 450px;
+         width: 550px;
+     }
+     
+     .content-one-lorem h1{
+         padding: 85px 0px 35px 30px;
+     }
+     
+     .content-one-lorem p{
+         padding: 0px 20px 40px 30px; 
+     }
+      
+   .content-one-lorem h1:hover,p:hover{
+    cursor: pointer;
+    opacity: 1;
+   }
+
+    
+ .header-menu li:hover{
+    background-color: rgba(72, 84, 96, 0.8);
+}
+
+.header-menu li:active{
+    background-color: rgba(255, 255, 255, 0.959);
+}
+
+}
+
+@media screen and (max-width:1000px){
+
+    .header-logo {
+        float: left;
+        padding:16px 50px;
+    }
+    
+    .content-one-lorem{
+        text-align: center;
+        margin: 115px auto 0px auto;
+        height: 450px;
+        width: 550px;
+    }
+    
+    .content-one-lorem h1{
+        
+        padding: 85px 20px 35px 20px;
+    }
+    
+    .content-one-lorem p{
+        padding: 0px 20px 40px 20px; 
+    }
+}
+
+@media screen and (max-width:670px){
+    .header-logo {
+        float: left;
+        padding:16px 50px;
+    }
+    
+    .content-one-lorem{
+        text-align: center;
+        margin: 115px auto 0px auto;
+        height: 450px;
+        width: 400px;
+    }
+    
+    .content-one-lorem h1{
+        
+        padding: 85px 15px 35px 15px;
+    }
+    
+    .content-one-lorem p{
+        padding: 0px 20px 40px 20px; 
+    }
+}
